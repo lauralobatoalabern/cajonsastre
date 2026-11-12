@@ -39,5 +39,22 @@
 	</ul>
 </footer>
 </div>
+<!-- Estadísticas: Cloudflare Web Analytics (no cuenta las visitas de la autora: abrir una vez la web con ?soyyo; para volver a contarlas, ?soylector) -->
+<script>
+(function () {
+	try {
+		var q = location.search;
+		if (q.indexOf('soyyo') !== -1) localStorage.setItem('noContarme', '1');
+		if (q.indexOf('soylector') !== -1) localStorage.removeItem('noContarme');
+		if (localStorage.getItem('noContarme') === '1') return;
+	} catch (e) {}
+	var s = document.createElement('script');
+	s.defer = true;
+	s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+	s.setAttribute('data-cf-beacon', '{"token": "a7a8092ff70c465bae6b05d05f35cd06"}');
+	document.body.appendChild(s);
+})();
+</script>
+<!-- Fin estadísticas -->
 </body>
 </html>
