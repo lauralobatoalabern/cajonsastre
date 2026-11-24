@@ -520,6 +520,30 @@ header .divisor--azul { margin: 1.17rem 0 0 0; }
 }
 .cds-tg-btn:hover { background: var(--oro-claro); }
 
+/* Aviso YouTube al final de cada artículo (debajo del de Telegram) */
+.cds-yt-wrap { margin-top: 2.25rem; }
+.cds-yt-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	box-sizing: border-box;
+	height: 3.375rem;
+	padding: 0 34px;
+	font-family: var(--sans);
+	font-size: .875em;
+	font-weight: 500;
+	letter-spacing: .12em;
+	color: var(--blanco);
+	background: var(--azul);
+	border: 1px solid #FFFFFF;
+	border-radius: 3rem;
+	text-decoration: none;
+	transition: background .25s ease;
+}
+.cds-yt-btn:hover { background: var(--azul-hover); }
+.cds-yt-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+
 /* Panel final: otros artículos */
 .otros-titulo {
 	margin: 0;
