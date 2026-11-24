@@ -745,3 +745,68 @@ button.boton-oro { font-family: var(--sans); }
 	.fila__sep { display: none; }
 	.fila__col { display: block; margin-top: .2rem; }
 }
+
+/* ---------- Iconos de redes (Instagram · Telegram · Spotify · YouTube) ----------
+   Igual que en la web principal de Carrd:
+   ordenador -> fijos arriba a la derecha, con fundido de entrada y zoom al pasar el ratón;
+   tablet y móvil (1024px o menos) -> en el pie, encima del copyright, con una línea fina. */
+@keyframes redes-fadein {
+	from { opacity: 0; transform: translateY(-15px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+.redes-arriba {
+	position: fixed;
+	top: 20px;
+	right: 24px;
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	gap: 22px;
+	opacity: 0;
+	animation: redes-fadein 3.75s ease 3s forwards;
+}
+.redes-arriba a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+	text-decoration: none;
+	opacity: .9;
+	transition: opacity .3s ease, transform .3s ease;
+}
+.redes-arriba a:hover { opacity: 1; transform: scale(1.15); }
+.redes-arriba svg {
+	width: 28px;
+	height: 28px;
+	stroke: #ffffff;
+	fill: none;
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,.65));
+}
+.redes-pie { display: none; text-align: center; margin: 32px 0 0 0; }
+.redes-pie__linea {
+	width: 215px;
+	height: 1px;
+	margin: 0 auto 14px auto;
+	background: rgba(255,255,255,.55);
+}
+.redes-pie__iconos { display: inline-flex; align-items: center; justify-content: center; gap: 14px; }
+.redes-pie__iconos a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	text-decoration: none;
+	opacity: .85;
+	transition: opacity .3s ease;
+	-webkit-tap-highlight-color: transparent;
+}
+.redes-pie__iconos a:hover, .redes-pie__iconos a:active { opacity: 1; }
+.redes-pie__iconos svg { width: 27px; height: 27px; stroke: #ffffff; fill: none; }
+@media (max-width: 1024px) {
+	.redes-arriba { display: none !important; }
+	.redes-pie { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.redes-arriba { animation: none; opacity: 1; }
+}
