@@ -123,6 +123,70 @@
 			</section>
 		</main>
 	</div>
+	<!-- ===== CUADRO YOUTUBE · PENSAMIENTO DISRUPTIVO ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:wght@400;500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  .pdtv-seccion{max-width:1000px;margin:56px auto;padding:0 16px;box-sizing:border-box}
+  .pdtv-cuadro{background:#1d3f73;color:#fff;border-radius:12px;padding:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:28px;align-items:center;box-sizing:border-box}
+  .pdtv-etiqueta{font-family:'Work Sans',Arial,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9fbbe8;margin:0}
+  .pdtv-titulo{font-family:'Bebas Neue',Impact,sans-serif;font-size:34px;font-weight:400;letter-spacing:1px;line-height:1.05;color:#fff;margin:6px 0 10px}
+  .pdtv-texto{font-family:'EB Garamond',Georgia,serif;font-size:18px;line-height:1.5;color:#dbe6f7;margin:0}
+  .pdtv-texto-2{margin:8px 0 22px;font-style:italic}
+  .pdtv-boton{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#1d3f73;font-family:'Work Sans',Arial,sans-serif;font-size:15px;font-weight:500;text-decoration:none;padding:11px 20px;border-radius:6px;transition:background .2s ease}
+  .pdtv-boton:hover,.pdtv-boton:focus-visible{background:#e3ecfa}
+  .pdtv-boton svg{width:20px;height:20px;flex-shrink:0}
+  .pdtv-video{position:relative;width:100%;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#0b1730}
+  .pdtv-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+  /* TABLET (721px – 1024px) */
+  @media (max-width:1024px){
+    .pdtv-seccion{margin:48px auto;padding:0 24px}
+    .pdtv-cuadro{grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:24px;gap:22px}
+    .pdtv-titulo{font-size:30px}
+    .pdtv-texto{font-size:17px}
+  }
+
+  /* MÓVIL (hasta 720px) */
+  @media (max-width:720px){
+    .pdtv-seccion{margin:40px auto;padding:0 16px}
+    .pdtv-cuadro{grid-template-columns:minmax(0,1fr);padding:22px 18px;gap:20px;text-align:center}
+    .pdtv-titulo{font-size:28px}
+    .pdtv-texto{font-size:16.5px}
+    .pdtv-texto-2{margin:6px 0 18px}
+    .pdtv-boton{justify-content:center;width:100%;max-width:260px;box-sizing:border-box}
+  }
+</style>
+
+<section class="pdtv-seccion" aria-labelledby="pdtv-titulo">
+  <div class="pdtv-cuadro">
+    <div>
+      <p class="pdtv-etiqueta">Canal de YouTube</p>
+      <h2 class="pdtv-titulo" id="pdtv-titulo">Pensamiento Disruptivo</h2>
+      <p class="pdtv-texto">Escucha y mira cada artículo del Cajón de Sastre narrado en vídeo.</p>
+      <p class="pdtv-texto pdtv-texto-2">Suscríbete para no perderte ninguno.</p>
+      <a class="pdtv-boton" href="https://www.youtube.com/@PensamientoDisruptivoTV?sub_confirmation=1" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#e62117" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8z"/>
+          <path fill="#fff" d="M9.75 15.5 15.5 12 9.75 8.5z"/>
+        </svg>
+        Suscribirme
+      </a>
+    </div>
+    <div class="pdtv-video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/videoseries?list=UULF2Kq8B0C1qD3pYbOI9TwD7A&rel=0"
+        title="Último vídeo de Pensamiento Disruptivo"
+        loading="lazy"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<!-- ===== FIN CUADRO YOUTUBE ===== -->
 	<footer class="pie">
 	<p class="pie__copyright">Copyright © 2026 Laura Lobato Alabern</p>
 	<ul class="pie__enlaces">
